@@ -1,27 +1,21 @@
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'
-import {Home, Product, About} from './pages'
+import {Home, Product, About, NotFound} from './pages'
+import Layout from './components/Layout'
 
-
-function App() {
-
+const App = () => {
   return (
-    <>
-          <div>
-      <nav className="bg-blue-600 text-white p-4 flex gap-4">
-        <Link to="/">Home</Link>
-        <Link to="/product">Product</Link>
-        <Link to="/about">About</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<h1 className="p-6 text-xl">Welcome to Home Page</h1>} />
-        <Route path="/product" element={<Product />}  />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
-    </>
+    <Routes>
+      {/* Layout Route */}
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="product" element={<Product />} />
+         <Route path="*" element={<NotFound />} />  {/* ← Catch-all 404 */}
+      </Route>
+    </Routes>
   )
 }
+
 
 export default App
