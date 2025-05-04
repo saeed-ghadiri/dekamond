@@ -1,25 +1,42 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import { Home, Product, About, NotFound } from "./pages";
-import Layout from "./components/Layout";
+import LayoutDefault from "./components/LayoutDefault";
+import LayoutBare from "./components/LayoutBare";
+import LayoutHeaderOnly from "./components/LayoutHeaderOnly";
+import LayoutFooterOnly from "./components/LayoutFooterOnly";
+
 import ProductCategory from "./pages/ProductCategory";
 import ProductDetail from "./pages/ProductDetail";
 
-// Inside Route layout:
-const App = () => {
+
+function App() {
   return (
     <Routes>
-      {/* Layout Route */}
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="product" element={<Product />} />
-        <Route path="product/:slug" element={<ProductCategory />} />
-        <Route path="product/:slug/:productName" element={<ProductDetail />} />
-        <Route path="about" element={<About />} />
-        <Route path="*" element={<NotFound />} /> {/* ← Catch-all 404 */}
+      {/* Pages with both Header & Footer */}
+      <Route element={<LayoutDefault />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/about" element={<About />} />
       </Route>
+
+      {/* Pages with only Header 
+      <Route element={<HeaderOnlyLayout />}>
+        <Route path="/special" element={<Special />} />
+      </Route> */}
+
+      {/* Pages with only Footer 
+      <Route element={<FooterOnlyLayout />}>
+        <Route path="/footer-only" element={<div>Page with only footer</div>} />
+      </Route> */}
+
+      {/* No layout at all 
+      <Route element={<BareLayout />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
+      </Route> */}
     </Routes>
   );
-};
+}
 
 export default App;
