@@ -16,7 +16,7 @@ function App() {
       {/* Pages with both Header & Footer */}
       <Route element={<LayoutDefault />}>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product" element={<ProductCategory />} />{" "}
         <Route path="/about" element={<About />} />
       </Route>
 
