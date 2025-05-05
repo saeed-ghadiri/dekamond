@@ -16,9 +16,14 @@ const Header = () => {
           <Link to="/about" className="hover:text-gray-300">
             About
           </Link>
-          <Link to="/catalog" className="hover:text-gray-300">
+          <a
+            href="/dekamond-catalog.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300"
+          >
             Catalog
-          </Link>
+          </a>
         </div>
       </nav>
     </header>
