@@ -1,32 +1,21 @@
-// src/pages/ProductDetail.tsx
-import React from "react";
 import { useParams } from "react-router-dom";
+import { productDetail } from "../data/productDetail";
 
 const ProductDetail = () => {
-  const { slug, productName } = useParams<{
-    slug: string;
-    productName: string;
-  }>();
+  const { productId } = useParams();
+  const product = productDetail.find((p) => p.id === productId);
+
+  if (!product)
+    return <div className="p-4 text-red-500">Product not found.</div>;
 
   return (
-    <div className="p-6 max-w-2xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4 capitalize">
-        {productName?.replace("-", " ")}
-      </h1>
-      <p className="text-gray-600 mb-4">
-        Category: <span className="capitalize">{slug?.replace("-", " ")}</span>
-      </p>
-
-      <div className="aspect-video bg-gray-200 rounded-lg mb-6 flex items-center justify-center text-gray-400">
-        {/* Placeholder for product image */}
-        Image goes here
-      </div>
-
-      <p className="text-gray-700 leading-relaxed">
-        This is a detailed description of the <strong>{productName}</strong>{" "}
-        product. It belongs to the <strong>{slug}</strong> category and offers
-        high quality, great performance, and excellent value.
-      </p>
+    <div className="container mx-auto p-6">
+      <h2 className="text-3xl font-bold mb-4">{product.name}</h2>
+      <img
+        src={product.image}
+        alt={product.name}
+        className="max-w-md mx-auto rounded shadow"
+      />
     </div>
   );
 };

@@ -6,9 +6,7 @@ import LayoutBare from "./components/LayoutBare";
 import LayoutHeaderOnly from "./components/LayoutHeaderOnly";
 import LayoutFooterOnly from "./components/LayoutFooterOnly";
 
-import ProductCategory from "./pages/ProductCategory";
 import ProductDetail from "./pages/ProductDetail";
-
 
 function App() {
   return (
@@ -16,7 +14,8 @@ function App() {
       {/* Pages with both Header & Footer */}
       <Route element={<LayoutDefault />}>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<ProductCategory />} />{" "}
+        <Route path="/product" element={<Product />} />
+        <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<About />} />
       </Route>
 

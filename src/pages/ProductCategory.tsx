@@ -1,6 +1,5 @@
 // src/pages/ProductCategory.tsx
 import { Link } from "react-router-dom";
-import { categories } from "../data/categoryData";
 
 const ProductCategory = () => {
   return (
