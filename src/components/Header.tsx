@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import headerImg from "../assets/images/header.jpg";
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white shadow-md">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="shadow-md">
+      <img src={headerImg} alt="Header" className="w-full h-40 object-cover" />
+      <nav className="bg-gray-800 text-white px-4 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">MySite</h1>
         <div className="space-x-4">
           <Link to="/" className="hover:text-gray-300">
@@ -17,7 +19,7 @@ const Header = () => {
             About
           </Link>
           <a
-            href="/dekamond-catalog.pdf"
+            href="/catalogs/catalog.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300"
