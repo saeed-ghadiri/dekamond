@@ -1,12 +1,12 @@
 
-import baseOilImg from "../assets/images/product/base-oil.jpg";
-import deiselEngineOilImg from "../assets/images/product/deisel-engine-oil.jpg";
-import engineOilImg from "../assets/images/product/engine-oil.jpg";
-import gearOilImg from "../assets/images/product/gear-oil.jpg";
-import graceImg from "../assets/images/product/grace.jpg";
-import hydrocarbonImg from "../assets/images/product/hydrocarbon.jpg";
-import hydroulicOilImg from "../assets/images/product/hydroulic-oil.jpg";
-import industrialOilImg from "../assets/images/product/industrial-oil.jpg";
+import baseOilImg from "/images/product/base-oil.jpg";
+import deiselEngineOilImg from "/images/product/deisel-engine-oil.jpg";
+import engineOilImg from "/images/product/engine-oil.jpg";
+import gearOilImg from "/images/product/gear-oil.jpg";
+import graceImg from "/images/product/grace.jpg";
+import hydrocarbonImg from "/images/product/hydrocarbon.jpg";
+import hydroulicOilImg from "/images/product/hydroulic-oil.jpg";
+import industrialOilImg from "/images/product/industrial-oil.jpg";
 
 export type Category = {
   name: string;

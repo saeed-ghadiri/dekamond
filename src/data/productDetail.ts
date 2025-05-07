@@ -1,13 +1,13 @@
-import deisel10w40Img from "../assets/images/product-detail/deisel-engine-oil,10w-40.jpg";
-import deisel15w40Img from "../assets/images/product-detail/deisel-engine-oil,15w-40.jpg";
-import deisel20w50Img from "../assets/images/product-detail/deisel-engine-oil,20w-50.jpg";
-import deiselcd50Img from "../assets/images/product-detail/deisel-engine-oil,cd-50.jpg";
-import engine5w30Img from "../assets/images/product-detail/engine-oil,5w-30.jpg";
-import engine10w40Img from "../assets/images/product-detail/engine-oil,10w-40.jpg";
-import engine20w50Img from "../assets/images/product-detail/engine-oil,20w-50.jpg";
-import gear01Img from "../assets/images/product-detail/gear-oil,01.jpg";
-import hydroulic01Img from "../assets/images/product-detail/hydroulic-oil,01.jpg";
-import industrial01Img from "../assets/images/product-detail/industrial-oil,01.jpg";
+import deisel10w40Img from "/images/product-detail/deisel-engine-oil,10w-40.jpg";
+import deisel15w40Img from "/images/product-detail/deisel-engine-oil,15w-40.jpg";
+import deisel20w50Img from "/images/product-detail/deisel-engine-oil,20w-50.jpg";
+import deiselcd50Img from "/images/product-detail/deisel-engine-oil,cd-50.jpg";
+import engine5w30Img from "/images/product-detail/engine-oil,5w-30.jpg";
+import engine10w40Img from "/images/product-detail/engine-oil,10w-40.jpg";
+import engine20w50Img from "/images/product-detail/engine-oil,20w-50.jpg";
+import gear01Img from "/images/product-detail/gear-oil,01.jpg";
+import hydroulic01Img from "/images/product-detail/hydroulic-oil,01.jpg";
+import industrial01Img from "/images/product-detail/industrial-oil,01.jpg";
 
 export type ProductDetail = {
   id: string;
