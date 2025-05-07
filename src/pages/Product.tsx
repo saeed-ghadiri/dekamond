@@ -11,14 +11,14 @@ const Product = () => {
     : [];
 
   return (
-    <div className="container mx-auto p-6">
-      <h2 className="text-3xl font-bold mb-6">Browse Categories</h2>
+    <div className="container  mx-auto p-6">
+      <h2 className="text-3xl font-bold mb-6">Categories</h2>
       <div className="flex flex-wrap gap-4 mb-8">
         {categories.map((cat) => (
           <div
             key={cat.slug}
             className={`cursor-pointer border rounded-md overflow-hidden shadow ${
-              selectedCategory === cat.slug ? "ring-2 ring-blue-400" : ""
+              selectedCategory === cat.slug ? "ring-2 ring-yellow-600" : ""
             }`}
             onClick={() => setSelectedCategory(cat.slug)}
           >
