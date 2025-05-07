@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const LayoutHeaderOnly = () => (
   <>
     <Header />
-    <main className="min-h-screen p-6">
+    <main className="">
       <Outlet />
     </main>
   </>

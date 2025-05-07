@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const LayoutDefault = () => (
   <>
     <Header />
-    <main className="min-h-screen p-6">
+    <main className="">
       <Outlet />
     </main>
     <Footer />

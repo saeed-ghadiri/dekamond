@@ -3,10 +3,19 @@ import footerImg from "../assets/images/footer.jpg";
 
 const Footer = () => {
   return (
-    <footer className="mt-8">
-      <img src={footerImg} alt="Footer" className="w-full h-40 object-cover" />
-      <div className="bg-gray-800 text-white text-center py-4 text-sm">
-        &copy; {new Date().getFullYear()} MySite. All rights reserved.
+    <footer className="">
+      {/* Image with overlay text */}
+      <div className="relative">
+        <img
+          src={footerImg}
+          alt="Footer"
+          className="w-full rounded-lg "
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-black/10">
+          <p className="text-white text-sm text-center px-4">
+            &copy; {new Date().getFullYear()} All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

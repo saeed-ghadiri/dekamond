@@ -8,11 +8,10 @@ const Header = () => {
       <img
         src={headerImg}
         alt="Header"
-        className="w-full object-contain rounded-lg md:h-40 lg:h-48"
+        className="w-full rounded-lg"
       />
       {/* Navbar */}
       <nav className="bg-purple-900 rounded-lg flex flex-wrap gap-3 px-4 py-2">
-        {/* Removed justify-center */}
         <Link
           to="/"
           className="text-yellow-500 hover:text-yellow-600 transition duration-300 ease-in-out"
@@ -26,7 +25,7 @@ const Header = () => {
           Product
         </Link>
         <a
-          href="/catalogs/catalog.pdf"
+          href="/dekamond-catalog.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-yellow-500 hover:text-yellow-600 transition duration-300 ease-in-out"

@@ -2,7 +2,7 @@
 import { Outlet } from "react-router-dom";
 
 const LayoutBare = () => (
-  <main className="min-h-screen p-6">
+  <main className="">
     <Outlet />
   </main>
 );
