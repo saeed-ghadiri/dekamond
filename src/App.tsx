@@ -1,10 +1,7 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import { Home, Product, About, NotFound } from "./pages";
 import LayoutDefault from "./components/LayoutDefault";
-import LayoutBare from "./components/LayoutBare";
-import LayoutHeaderOnly from "./components/LayoutHeaderOnly";
-import LayoutFooterOnly from "./components/LayoutFooterOnly";
 
 import ProductDetail from "./pages/ProductDetail";
 
@@ -17,6 +14,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<About />} />
+        <Route path="/*" element={<NotFound />} />
       </Route>
 
       {/* Pages with only Header 

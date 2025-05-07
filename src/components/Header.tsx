@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import headerImg from "../assets/images/header.jpg";
 

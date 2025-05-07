@@ -1,4 +1,4 @@
-import React from "react";
+
 import footerImg from "../assets/images/footer.jpg";
 
 const Footer = () => {
