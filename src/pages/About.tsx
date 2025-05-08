@@ -1,6 +1,6 @@
 import about1 from "/images/about01.jpg";
 import about2 from "/images/about02.jpg";
-import about3 from "/images/about03.jpg";
+import about3 from "../assets/images/about03.jpg";
 
 
 const About = () => {
