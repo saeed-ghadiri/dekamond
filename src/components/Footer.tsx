@@ -1,5 +1,5 @@
 
-import footerImg from "/images/footer.jpg";
+import footerImg from "../assets/images/footer.jpg";
 
 const Footer = () => {
   return (

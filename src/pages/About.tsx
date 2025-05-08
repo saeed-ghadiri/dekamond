@@ -1,5 +1,5 @@
-import about1 from "/images/about01.jpg";
-import about2 from "/images/about02.jpg";
+import about1 from "../assets/images/about01.jpg";
+import about2 from "../assets/images/about02.jpg";
 import about3 from "../assets/images/about03.jpg";
 
 
