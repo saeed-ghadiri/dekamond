@@ -12,8 +12,8 @@ const Product = () => {
 
   return (
     <div className="container  mx-auto p-6">
-      <h2 className="text-3xl font-bold mb-3 text-amber-300">Categories</h2>
-      <h1 className="text-1xl font-bold mb-3 text-amber-300">
+      <h2 className="text-3xl font-bold mb-3 text-purple-800">Categories</h2>
+      <h1 className="text-1xl font-bold mb-3 text-purple-800">
         (click to see products)
       </h1>
       <div className="flex flex-wrap gap-4 mb-8">
@@ -21,7 +21,7 @@ const Product = () => {
           <div
             key={cat.slug}
             className={`cursor-pointer border rounded-md overflow-hidden shadow ${
-              selectedCategory === cat.slug ? "ring-2 ring-yellow-600" : ""
+              selectedCategory === cat.slug ? "ring-7 ring-purple-600" : ""
             }`}
             onClick={() => setSelectedCategory(cat.slug)}
           >
@@ -30,7 +30,7 @@ const Product = () => {
               alt={cat.name}
               className="w-40 h-24 object-cover"
             />
-            <p className="text-center p-2 font-medium bg-purple-600">
+            <p className="text-center p-2 font-medium bg-purple-800">
               {cat.name}
             </p>
           </div>
@@ -39,10 +39,10 @@ const Product = () => {
 
       {filteredProducts.length > 0 && (
         <>
-          <h3 className="text-2xl font-semibold mb-4 capitalize text-amber-300">
+          <h3 className="text-2xl font-semibold mb-4 capitalize text-purple-800">
             {selectedCategory} Products
           </h3>
-          <h1 className="text-1xl font-bold mb-3 text-amber-300">(click to see details)</h1>
+          <h1 className="text-1xl font-bold mb-3 text-purple-800">(click to see details)</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {filteredProducts.map((product) => (
               <Link

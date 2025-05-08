@@ -17,14 +17,60 @@ export type ProductDetail = {
 };
 
 export const productDetail: ProductDetail[] = [
-  { id: "deisel10w40", name: "Deisel10w40", image: deisel10w40Img, category: "deisel-engine-oil"},
-  { id: "deisel15w40",  name: "Deisel15w40", image: deisel15w40Img, category: "deisel-engine-oil"},
-  { id: "deisel20w50", name: "Deisel20w50", image: deisel20w50Img, category: "deisel-engine-oil"},
-  { id: "deiselcd50", name: "Deiselcd50", image: deiselcd50Img, category: "deisel-engine-oil"},
-  { id: "engine5w30", name: "Engine5w30", image: engine5w30Img, category:"engine-oil"},
-  { id: "engine10w40", name: "Engine10w40", image: engine10w40Img, category: "engine-oil"},
-  { id: "engine20w50", name: "Engine20w50", image: engine20w50Img, category: "engine-oil"},
-  { id: "gear01", name: "Gear01", image: gear01Img, category: "gear-oil"},
-  { id: "hydroulic01", name: "Hydroulic01", image: hydroulic01Img, category: "hydroulic-oil"},
-  { id: "industrial01", name: "Industrial01", image: industrial01Img, category: "industrial-oil"},
+  {
+    id: "deisel10w40",
+    name: "Deisel 10w-40",
+    image: deisel10w40Img,
+    category: "deisel engine oil",
+  },
+  {
+    id: "deisel15w40",
+    name: "Deisel 15w-40",
+    image: deisel15w40Img,
+    category: "deisel engine oil",
+  },
+  {
+    id: "deisel20w50",
+    name: "Deisel 20w-50",
+    image: deisel20w50Img,
+    category: "deisel engine oil",
+  },
+  {
+    id: "deiselcd50",
+    name: "Deisel cd-50",
+    image: deiselcd50Img,
+    category: "deisel engine oil",
+  },
+  {
+    id: "engine5w30",
+    name: "Engine 5w-30",
+    image: engine5w30Img,
+    category: "engine oil",
+  },
+  {
+    id: "engine10w40",
+    name: "Engine 10w-40",
+    image: engine10w40Img,
+    category: "engine oil",
+  },
+  {
+    id: "engine20w50",
+    name: "Engine 20w-50",
+    image: engine20w50Img,
+    category: "engine oil",
+  },
+  { id: "gear01", name: "Gear", image: gear01Img, category: "gear oil" },
+  {
+    id: "hydroulic01",
+    name: "Hydroulic",
+    image: hydroulic01Img,
+    category: "hydroulic oil",
+  },
+  {
+    id: "industrial01",
+    name: "Industrial",
+    image: industrial01Img,
+    category: "industrial oil",
+  },
 ];
+

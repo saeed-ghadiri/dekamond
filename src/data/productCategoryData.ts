@@ -16,15 +16,15 @@ export type Category = {
 
 export const categories: Category[] = [
   {
-    name: "DeiselEngineOil",
-    slug: "deisel-engine-oil",
+    name: "Deisel Engine Oil",
+    slug: "deisel engine oil",
     image: deiselEngineOilImg,
   },
-  { name: "EngineOil", slug: "engine-oil", image: engineOilImg },
-  { name: "HydroulicOil", slug: "hydroulic-oil", image: hydroulicOilImg },
-  { name: "GearOil", slug: "gear-oil", image: gearOilImg },
-  { name: "IndustrialOil", slug: "industrial-oil", image: industrialOilImg },
-  { name: "BaseOil", slug: "base-oil", image: baseOilImg },
+  { name: "Engine Oil", slug: "engine oil", image: engineOilImg },
+  { name: "Hydroulic Oil", slug: "hydroulic oil", image: hydroulicOilImg },
+  { name: "Gear Oil", slug: "gear oil", image: gearOilImg },
+  { name: "Industrial Oil", slug: "industrial oil", image: industrialOilImg },
+  { name: "Base Oil", slug: "base oil", image: baseOilImg },
   { name: "Grace", slug: "grace", image: graceImg },
   { name: "Hydrocarbon", slug: "hdrocarbon", image: hydrocarbonImg },
 ];
